@@ -37,53 +37,59 @@ The project uses the following Python libraries:
 
 <h4>Setup</h4>
 
-Create a YouTube Data API Key:
+<p>Create a YouTube Data API Key:</p>
+<ul>
+<li> Go to the Google Cloud Console.</li>
 
-1. Go to the Google Cloud Console.
+<li>  Create a new project.</li>
 
-2. Create a new project.
+<li>  Enable the YouTube Data API v3 under API & Services > Library.</li>
 
-3. Enable the YouTube Data API v3 under API & Services > Library.
+<li>  Create an API Key in the Credentials section.</li>
 
-4. Create an API Key in the Credentials section.
+<li>  Update API Key in the Code: In the backend.py file, replace the placeholder API_KEY with your actual API Key.</li>
+</ul>
 
-5. Update API Key in the Code: In the backend.py file, replace the placeholder API_KEY with your actual API Key.
+<code>API_KEY = "YOUR_API_KEY_HERE"</code>
 
-API_KEY = "YOUR_API_KEY_HERE"
+<h4>Run the Project:</h4>
 
-Run the Project:
+<p>Once you have set up the environment and API Key, run the script:</p>
 
-Once you have set up the environment and API Key, run the script:
+<code>python backend.py</code>
 
-python backend.py
+<h4>Interacting with the Program:</h4>
+<ul>
+<li>The program will fetch trending YouTube videos and classify them.</li>
 
-Interacting with the Program:
+<li>It will then ask you to input a topic to fetch and recommend top videos related to that topic.</li>
 
-The program will fetch trending YouTube videos and classify them.
+<li>Visualizations will be displayed to help you understand video trends and engagement.</li>
+</ul>
+<h4>Usage</h4>
+<ul>
+  <li>
+    <strong>Fetching Trending Videos:</strong>
+    <p>The script automatically fetches trending videos in the U.S. (can be modified for other regions).</p>
+  </li>
+  <li>
+    <strong>Classifying Videos:</strong>
+    <p>Videos are classified into two categories: Trending or Non-Trending, based on their view count and like count.</p>
+  </li>
+  <li>
+    <strong>Recommendation System:</strong>
+    <p>The user is prompted to enter a topic (e.g., "technology", "sports", etc.), and the top 10 related videos are recommended.</p>
+  </li>
+  <li>
+    <strong>Visualizations:</strong>
+    <p>A distribution plot shows the number of trending vs non-trending videos.</p>
+    <p>A heatmap visualizes the trendingness of videos based on their publish time (hour of day vs day of week).</p>
+    <p>A bar plot compares the engagement metrics (views, likes, comments) for the top 10 recommended videos.</p>
+  </li>
+</ul>
 
-It will then ask you to input a topic to fetch and recommend top videos related to that topic.
+<h4>Outputs:</h4>
 
-Visualizations will be displayed to help you understand video trends and engagement.
-
-Usage
-1. Fetching Trending Videos:
-The script automatically fetches trending videos in the U.S. (can be modified for other regions).
-
-2. Classifying Videos:
-The videos are classified into two categories: Trending or Non-Trending, based on their view count and like count.
-
-3. Recommendation System:
-The user is prompted to enter a topic (e.g., "technology", "sports", etc.), and the top 10 related videos are recommended.
-
-4. Visualizations:
-
-A distribution plot shows the number of trending vs non-trending videos.
-
-A heatmap visualizes the trendingness of videos based on their publish time (hour of day vs day of week).
-
-A bar plot compares the engagement metrics (views, likes, comments) for the top 10 recommended videos.
-
-Outputs:
 ![metrics](https://github.com/user-attachments/assets/740265a5-5bb9-472a-83ff-cd17a5ebfe2d)
 ![trending_vs_nontrending](https://github.com/user-attachments/assets/31854a2c-ec7e-48e4-8aac-f7341e1d2daf)
 ![heatmap](https://github.com/user-attachments/assets/b2065871-0bbf-4079-904e-140dc1bf3187)
@@ -91,22 +97,23 @@ Outputs:
 ![engagement](https://github.com/user-attachments/assets/1537f5b2-0ee4-4c0f-938c-6fcc99e86fd2)
 
 
-Troubleshooting
+<h4>Troubleshooting</h4>
+<ul>
+  <li>
+    <strong>API Key Error:</strong>
+    <p>If you encounter an error regarding the API key, double-check the key’s validity and permissions.</p>
+  </li>
+  <li>
+    <strong>Rate Limit Issues:</strong>
+    <p>YouTube’s API has rate limits. If you exceed them, the script will fail. You can increase your quota via the Google Cloud Console.</p>
+  </li>
+</ul>
 
-1. API Key Error:
 
-If you encounter an error regarding the API key, double-check the key’s validity and permissions.
-
-2. Rate Limit Issues:
-
-YouTube’s API has rate limits. If you exceed them, the script will fail. You can increase your quota via the Google Cloud Console.
+<h4>Acknowledgements</h4>
+<p>This project uses the YouTube Data API v3 provided by Google.The Random Forest classifier is implemented using the scikit-learn library.</p>
 
 
-Acknowledgements
-This project uses the YouTube Data API v3 provided by Google.
 
-The Random Forest classifier is implemented using the scikit-learn library.
-
-Contact
-For any questions or issues, feel free to open an issue in the repository or contact Shanmukhi Poluri at shanmukhip2005@gmail.com.
-
+<h4>Contact</h4>
+<p>For any questions or issues, feel free to open an issue in the repository or contact Shanmukhi Poluri at shanmukhip2005@gmail.com.</p>
