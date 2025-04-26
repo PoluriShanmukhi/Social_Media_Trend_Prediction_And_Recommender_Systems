@@ -1,40 +1,41 @@
 <h2>Social Media Trend Prediction and Recommender Systems</h2>
 
-Social media used is Youtube API
+<p>Social media used is Youtube API</p>
 
-Description
-This project analyzes trending YouTube videos and provides recommendations based on a user-specified topic. It uses YouTube’s Data API to fetch video data such as views, likes, comments, and publish time, and applies machine learning (Random Forest) to classify videos as "Trending" or "Non-Trending." It also visualizes various metrics like trending video distribution and engagement metrics.
+<h4>Description</h4>
+<p>This project analyzes trending YouTube videos and provides recommendations based on a user-specified topic. It uses YouTube’s Data API to fetch video data such as views, likes, comments, and publish time, and applies machine learning (Random Forest) to classify videos as "Trending" or "Non-Trending." It also visualizes various metrics like trending video distribution and engagement metrics.</p>
 
-Features
-Fetches Trending Videos from YouTube based on view count, like count, and comment count.
+<h4>Features</h4>
+<ul>
+<li>Fetches Trending Videos from YouTube based on view count, like count, and comment count.</li>
 
-Classifies videos as "Trending" or "Non-Trending" based on engagement metrics.
+<li>Classifies videos as "Trending" or "Non-Trending" based on engagement metrics.</li>
 
-Visualizes trending video distribution and hourly/daily patterns.
+<li>Visualizes trending video distribution and hourly/daily patterns.</li>
 
-Recommends top videos by topic based on user input.
+<li>Recommends top videos by topic based on user input.</li>
 
-Visualizes engagement metrics (views, likes, comments) for top recommended videos.
+<li>Visualizes engagement metrics (views, likes, comments) for top recommended videos.</li>
+</ul>
+<h4>Requirements</h4>
 
-Requirements
 The project uses the following Python libraries:
+<ol>
+<li>matplotlib - for data visualization</li>
 
-matplotlib - for data visualization
+<li>requests - for making HTTP requests to YouTube API</li>
 
-requests - for making HTTP requests to YouTube API
+<li>pandas - for handling and analyzing data</li>
 
-pandas - for handling and analyzing data
+<li>seaborn - for statistical data visualization</li>
 
-seaborn - for statistical data visualization
+<li>scikit-learn - for training the Random Forest classifier</li>
+</ol>
+<p>To install the required libraries, create a virtual environment and use the following command to install all dependencies:</p>
 
-scikit-learn - for training the Random Forest classifier
+<code>pip install -r requirements.txt</code>
 
-To install the required libraries, create a virtual environment and use the following command to install all dependencies:
-
-
-pip install -r requirements.txt
-
-Setup
+<h4>Setup</h4>
 
 Create a YouTube Data API Key:
 
