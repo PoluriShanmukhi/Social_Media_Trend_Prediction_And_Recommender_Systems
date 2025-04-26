@@ -1,4 +1,4 @@
-Social Media Trend Prediction and Recommender Systems
+<h2>Social Media Trend Prediction and Recommender Systems</h2>
 
 Social media used is Youtube API
 
